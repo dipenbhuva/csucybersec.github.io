@@ -1,0 +1,415 @@
+<!-- Developer : Dipen Bhuva
+Developer Email : shailkothari1111@gmail.com -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from shail28.github.io/NSF-SaTC/s2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jul 2023 03:28:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>NSF SaTC | Meltdown</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/cufon-yui.js"></script>
+    <script src="js/cufon-replace.js"></script>
+    <script src="js/Myriad_Pro_300.font.js"></script>
+    <script src="js/Myriad_Pro_400.font.js"></script>
+
+</head>
+
+<body id="page2">
+
+    <div class="body1"></div>
+
+    <!-- Banner -->
+    <div class="body2">
+        <div class="main">
+            <header>
+                <div class="wrapper">
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Scenarios
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="s1.html">Scenario 1</a>
+                                        <a href="s2.html">Scenario 2</a>
+                                        <a href="s3.html">Scenario 3</a>
+                                        <a href="s4.html">Scenario 4</a>
+                                        <a href="s5.html">Scenario 5</a>
+                                        <a href="s6.html">Scenario 6</a>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li><a href="scenario.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <h2><a href="#" id="logo1">Logo or Title</a></h2>
+
+                    <article class="col1 pad_left2">
+                        <div class="text1">Project Zero Team's<span>Take on</span><span style="padding-left: 15%;">Meltdown & Spectre</span><br></div>
+                    </article>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <!-- Targeted Info -->
+    <div class="body3">
+        <div class="main">
+            <section id="content_top">
+                <article class="pad">
+                    <h2>How Will the Meltdown and Spectre Flaws Affect My PC?</h2>
+                    <div class="wrapper marg_top">
+                        <figure class="left marg_right1"><img src="images/scenario2/info.png" alt="Img" width="230px" height="140px"></figure>
+                        <p class="pad_bot2">
+                            Computer processors have a massive design flaw, and everyone is scrambling to fix it. Only one of the 
+                            two security holes can be patched, and the patches will make PCs (and Macs) with Intel chips slower.
+                        </p>
+                        <p class="pad_bot2">
+                            An earlier version of this article stated that this flaw was specific to Intel chips, but that 
+                            isn't the whole story. There are in fact two major vulnerabilities here, now dubbed “Meltdown” 
+                            and “Spectre”. Meltdown is largely specific to Intel processors, and affects all CPU models from 
+                            the past few decades. We've added more information about these two bugs, and the difference between 
+                            them, to the article below.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scenario Data & Additional Details -->
+    <br>
+    <div class="tab">
+        <p class="tablinks"><b>Table of Content</b></p>
+        <button class="tablinks" onclick="openCity(event, 'det1')" id="defaultOpen">How It Got Found?</button>
+        <button class="tablinks" onclick="openCity(event, 'det2')">What are Meltdown & Spectre?</button>
+        <button class="tablinks" onclick="openCity(event, 'det4')">Legal Accounts</button>
+        <button class="tablinks" onclick="openCity(event, 'det5')">NICE Workforce Framework</button>
+        <button class="tablinks" onclick="openCity(event, 'det6')">Contact Us</button>
+    </div>
+    <div class="main">
+        <section id="content">
+            <div class="wrapper pad_bot1">
+                <article class="tabcontent pad_left2" id="det1">
+                    <h2>Google's Project Zero team discovered critical CPU flaw</h2>
+                    <p class="pad_bot2">
+                        In 2015, Google's Project Zero team discovered a
+                        hardware vulnerability, called Meltdown and Spectre, affecting Intel x86, IBM POWER and some ARM-based
+                        microprocessors. It allows a rogue process to read all memory including security and private data,
+                        even when it is not authorized to do so. Meltdown affects a wide range of systems. At the time of disclosure,
+                        this included all devices running any but the most recent and patched versions of iOS, Linux, macOS,
+                        or Windows. Accordingly, many servers and cloud services were impacted, as well as a potential
+                        majority of smart devices and embedded devices using ARM based processors (mobile devices, smart TVs,
+                        printers and others), including a wide range of networking equipment.
+                    </p>
+                    <p class="pad_bot2">
+                        A purely software workaround to
+                        Meltdown has been assessed as slowing computers between 5 and 30 percent in certain specialized workloads,
+                        although companies responsible for software correction of the exploit are reporting minimal impact from
+                        general benchmark testing. No known attacks have been reported yet though. In fact, Apple was
+                        hit with a class action lawsuit by New York lawyer Mark Rifkin, which alleges that Apple
+                        knowingly sold devices with the security flaws to customers and did not inform customers that
+                        the fixes could cause a performance slowdown, affecting the quality of their products. Intel has
+                        already faced a number of lawsuits in relation to this security 
+                        flaws, including a class action suit filed by
+                        Rifkin's law firm, Wolf Haldenstein.
+                    </p>
+                    <p class="pad_bot2">
+                        The Project Zero researcher, Jann Horn, demonstrated that malicious actors could take advantage of 
+                        speculative execution to read system memory that should have been inaccessible. For example, an 
+                        unauthorized party may read sensitive information in the system's memory such as passwords, encryption 
+                        keys, or sensitive information open in applications. Testing also showed that an attack running on one 
+                        virtual machine was able to access the physical memory of the host machine, and through that, gain 
+                        read-access to the memory of a different virtual machine on the same host.
+                    </p>
+                    <p class="pad_bot2">
+                        These vulnerabilities affect many CPUs, including those from AMD, ARM, and Intel, as well as the devices 
+                        and operating systems running on them.
+                    </p>
+                    <p class="pad_bot2">
+                        As soon as Google learned of this new class of attack, their security and product development teams mobilized 
+                        to defend Google's systems and their users' data. Google have updated their systems and affected products to 
+                        protect against this new type of attack. Google also collaborated with hardware and software manufacturers 
+                        across the industry to help protect their users and the broader web. These efforts have included collaborative 
+                        analysis and the development of novel mitigations.
+                    </p>
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/xP4YATpTGmA" title="RuhrSec 2018: The Story of Meltdown and Spectre, Dr. Daniel Gruss & Jann Horn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="pad_bot2">*RuhrSec 2018: "The Story of Meltdown and Spectre", Dr. Daniel Gruss & Jann Horn</p>
+                    
+                    <h2>Methods of Attack</h2>
+                    <p class="pad_bot2">
+                        To take advantage of this vulnerability, an attacker first must be able to run malicious code on the targeted system.
+                    </p>
+                    <p class="pad_bot2">
+                        The Project Zero researchers discovered three methods (variants) of attack, which are effective 
+                        under different conditions. All three attack variants can allow a process with normal user privileges 
+                        to perform unauthorized reads of memory data, which may contain sensitive information such as passwords, 
+                        cryptographic key material, etc.
+                    </p>
+                    <p class="pad_bot2">
+                        In order to improve performance, many CPUs may choose to speculatively execute instructions based on 
+                        assumptions that are considered likely to be true. During speculative execution, the processor is 
+                        verifying these assumptions; if they are valid, then the execution continues.
+                    </p>
+                    <p class="pad_bot2">
+                        If they are invalid, then the execution is unwound, and the correct execution path can be started 
+                        based on the actual conditions. It is possible for this speculative execution to have side effects 
+                        which are not restored when the CPU state is unwound, and can lead to information disclosure.
+                    </p>
+                    <p class="pad_bot2">
+                        There is no single fix for all three attack variants; each requires protection independently. Many 
+                        vendors have patches available for one or more of these attacks.
+
+                    </p>
+                    <p class="pad_bot2">
+                        We will continue our work to mitigate these vulnerabilities and will update both our product support 
+                        page and this blog post as we release further fixes. More broadly, we appreciate the support and 
+                        involvement of all the partners and Google engineers who worked tirelessly over the last few months 
+                        to make our users and customers safe.
+                    </p>
+                </article>
+                <article class="tabcontent pad_left2" id="det2">
+                    <h2>What Are Meltdown and Spectre?</h2>
+                    <p>
+                        Spectre is a “fundamental design flaw” that exists in every CPU on the market—including those 
+                        from AMD and ARM as well as Intel. There is currently no software fix, and it will likely require 
+                        a complete hardware redesign for CPUs across the board—though thankfully it is fairly difficult 
+                        to exploit, according to security researchers. It's possible to protect against specific Spectre 
+                        attacks, and developers are working on it, but the best solution will be a CPU hardware redesign for all future chips.
+                    </p>
+                    <p>
+                        Meltdown basically makes Spectre worse by making the core underlying flaw much easier to exploit. 
+                        It's essentially an additional flaw that affects all Intel processors made in the past few decades. 
+                        It also affects some high-end ARM Cortex-A processors, but it doesn't affect AMD chips. Meltdown 
+                        is being patched in operating systems today.
+                    </p>
+                    <img src="images/scenario2/flow.png" width="" height="">
+
+                    <h2>But how do these flaws work?</h2>
+                    <p>
+                        Programs running on your computer run with different levels of security permissions. The operating 
+                        system kernel—the Windows kernel or the Linux kernel, for example—has the highest level of permissions 
+                        because it runs the show. Desktop programs have fewer permissions and the kernel restricts what they 
+                        can do. The kernel uses the processor's hardware features to help enforce some of these restrictions, 
+                        because it's faster to do it with hardware than software.
+                    </p>
+                    <p>
+                        The problem here is with “speculative execution”. For performance reasons, modern CPUs automatically 
+                        run instructions they think they might need to run and, if they don't, they can simply rewind and 
+                        return the system to its previous state. However, a flaw in Intel and some ARM processors allows 
+                        processes to run operations that they wouldn't normally be able to run, as the operation is performed 
+                        before the processor bothers to check whether it should have permission to run it or not. That's the Meltdown bug.
+                    </p>
+                    <p>
+                        The core problem with both Meltdown and Spectre lies within the CPU's cache. An application can attempt 
+                        to read memory and, if it reads something in the cache, the operation will complete faster. If it tries 
+                        to read something not in the cache, it will complete slower. The application can see whether or not 
+                        something completes fast or slow and, while everything else during speculative execution is cleaned up and 
+                        erased, the time it took to perform the operation can't be hidden. It can then use this information to build 
+                        a map of anything in the computer's memory, one bit at a time. The caching speeds things up, but these attacks 
+                        take advantage of that optimization and turns it into a security flaw.
+                    </p>
+                    <p>
+                        So, in a worst case scenario, JavaScript code running in your web browser could effectively read memory it 
+                        shouldn't have access to, such as private information held in other applications. Cloud providers like Microsoft 
+                        Azure or Amazon Web Services, who host multiple different company's software in different virtual machines 
+                        on the same hardware are particularly at risk. One person's software could, in theory, spy on things in 
+                        another company's virtual machine. It's a breakdown in the separation between applications. The patches for 
+                        Meltdown means this attack won't be as easy to pull off. Unfortunately, putting these extra checks into place 
+                        means some operations will be slower on affected hardware.
+                    </p>
+
+                    <h2>What Do I Need to Do?</h2>
+                    <p>
+                        Some updates to fix the Meltdown issue are already available. Microsoft has issued an emergency update 
+                        to supported versions of Windows via Windows Update on January 3, 2018, but it hasn't made it to all PCs 
+                        yet. The Windows Update that solves the Meltdown and adds some protections against Spectre is named KB4056892.
+                    </p>
+                    <p>
+                        Apple already patched the issue with macOS 10.13.2, released on December 6, 2017. Chromebooks with Chrome 
+                        OS 63, which was released in mid-December, are already protected. Patches are also available for the Linux kernel.
+                    </p>
+                    <p>
+                        In addition, check to see if your PC has BIOS/UEFI updates available. While the Windows update fixed the 
+                        Meltdown problem, CPU microcode updates from Intel delivered via a UEFI or BIOS update are needed to fully 
+                        enable protection against one of the Spectre attacks. You should also update your web browser—as usual—as 
+                        browsers are adding some protections against Spectre, as well.
+                    </p>
+                </article>
+                <article class="tabcontent pad_left2" id="det4">
+                    <h2>Legal Data</h2>
+                    <p>Legal Aspects of such type of Hardware Vulnerabilities:</p>
+                    <p>
+                        1. Legal analysis of when to disclose vulnerabilities<br>
+                        2. Practical and legal challenges in attribution<br>
+                    </p>
+
+                </article>
+                <article class="tabcontent pad_left2" id="det5">
+                    <h2>NICE Workforce Framework</h2>
+                    <p>
+                        The requirements for cybersecurity can vary widely from organization 
+                        to organization. A role that can be extremely relevant to a specific 
+                        business may not make sense for a smaller company or even a larger 
+                        one but that works in another segment.
+                    </p>
+
+                    <p>
+                        After going through the whole article here and completing the practical 
+                        you will get some knowledge and skills that will help you to sort through 
+                        some work roles which will discuss about your competency in certain aspects.
+                    </p>
+
+                    <p>
+                        Below is a list of KS (Knowledge/Skill) provided by NICE Framework which is a 
+                        part of Workforce Development by NICCS (NATIONAL INITIATIVE FOR CYBERSECURITY 
+                        CAREERS AND STUDIES) which the reader here could have obtained:
+                    </p>
+
+                    <table id="ksa">
+                        <tr>
+                            <th class="ksa_id">KSA ID</th>
+                            <th>Knowledge</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="sub_title">Knowledge</td>
+                        </tr>
+                        <tr><td>K0001</td><td>Knowledge of computer networking concepts and protocols, and network security methodologies. </td></tr>
+                        <tr><td>K0002</td><td>Knowledge of risk management processes (e.g., methods for assessing and mitigating risk).</td></tr>
+                        <tr><td>K0003</td><td>Knowledge of laws, regulations, policies, and ethics as they relate to cybersecurity and privacy. </td></tr>
+                        <tr><td>K0004</td><td>Knowledge of cybersecurity and privacy principles.</td></tr>
+                        <tr><td>K0005</td><td>Knowledge of cyber threats and vulnerabilities. </td></tr>
+                        <tr><td>K0006</td><td>Knowledge of specific operational impacts of cybersecurity lapses.</td></tr>
+                        <tr><td>K0046</td><td>Knowledge of intrusion detection methodologies and techniques for detecting host and network-based intrusions.</td></tr>
+                        <tr><td>K0070</td><td>Knowledge of system and application security threats and vulnerabilities (e.g., buffer overflow, mobile code, cross-site scripting, Procedural Language/Structured Query Language [PL/SQL] and injections, race conditions, covert channel, replay, return-oriented attacks, malicious code).</td></tr>
+                        <tr><td>K0107</td><td>Knowledge of Insider Threat investigations, reporting, investigative tools and laws/regulations.</td></tr>
+                        <tr><td>K0110</td><td>Knowledge of adversarial tactics, techniques, and procedures.</td></tr>
+                        <tr><td>K0114</td><td>Knowledge of electronic devices (e.g., computer systems/components, access control devices, digital cameras, digital scanners, electronic organizers, hard drives, memory cards, modems, network components, networked appliances, networked home control devices, printers, removable storage devices, telephones, copiers, facsimile machines, etc.).</td></tr>
+                        <tr><td>K0118</td><td>Knowledge of processes for seizing and preserving digital evidence.</td></tr>
+                        <tr><td>K0123</td><td>Knowledge of legal governance related to admissibility (e.g. Rules of Evidence). </td></tr>
+                        <tr><td>K0125</td><td>Knowledge of processes for collecting, packaging, transporting, and storing electronic evidence while maintaining chain of custody.</td></tr>
+                        <tr><td>K0128</td><td>Knowledge of types and collection of persistent data.</td></tr>
+                        <tr><td>K0144</td><td>Knowledge of social dynamics of computer attackers in a global context.</td></tr>
+                        <tr><td>K0155</td><td>Knowledge of electronic evidence law.</td></tr>
+                        <tr><td>K0156</td><td>Knowledge of legal rules of evidence and court procedure.</td></tr>
+                        <tr><td>K0168</td><td>Knowledge of applicable laws, statutes (e.g., in Titles 10, 18, 32, 50 in U.S. Code), Presidential Directives, executive branch guidelines, and/or administrative/criminal legal guidelines and procedures.</td></tr>
+                        <tr><td>K0209</td><td>Knowledge of covert communication techniques.</td></tr>
+                        <tr><td>K0231</td><td>Knowledge of crisis management protocols, processes, and techniques. </td></tr>
+                        <tr><td>K0244</td><td>Knowledge of physical and physiological behaviors that may indicate suspicious or abnormal activity.</td></tr>
+                        <tr><td>K0251</td><td>Knowledge of the judicial process, including the presentation of facts and evidence.</td></tr>
+                        <tr><td>K0351</td><td>Knowledge of applicable statutes, laws, regulations and policies governing cyber targeting and exploitation.</td></tr>
+                        <tr><td>K0624</td><td>Knowledge of Application Security Risks (e.g. Open Web Application Security Project Top 10 list)</td></tr>
+
+                        <tr>
+                            <td colspan="2" class="sub_title">Skill</td>
+                        </tr>
+                        <tr><td>S0047</td><td>Skill in preserving evidence integrity according to standard operating procedures or national standards.</td></tr>
+                        <tr><td>S0068</td><td>Skill in collecting, processing, packaging, transporting, and storing electronic evidence to avoid alteration, loss, physical damage, or destruction of data.</td></tr>
+                        <tr><td>S0072</td><td>Skill in using scientific rules and methods to solve problems.</td></tr>
+                        <tr><td>S0086</td><td>Skill in evaluating the trustworthiness of the supplier and/or product.</td></tr>
+
+                    </table>
+                </article>
+                <article class="tabcontent get-in-touch" id="det6">
+                    <h1 class="title">
+                        Have a Question? Ask Us
+                        <p style="font-size: 20px;">We will get back to you</p>
+                    </h1>
+                    <form class="contact-form row">
+                        <div class="form-field col x-50">
+                            <input id="name" class="input-texts js-input" type="text" required>
+                            <label class="label" for="name">Name</label>
+                        </div>
+                        <div class="form-field col x-50">
+                            <input id="email" class="input-texts js-input" type="email" required>
+                            <label class="label" for="email">E-mail</label>
+                        </div>
+                        <div class="form-field col x-100">
+                            <input id="message" class="input-texts js-input" type="text" required>
+                            <label class="label" for="message">Message</label>
+                        </div>
+                        <div class="form-field col x-100 align-center">
+                            <input class="submit-btn" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerlink">
+            <p class="lf">Copyright &copy; 2022 <a href="#">CSU_Cybersec</a> - All Rights Reserved</p>
+            <p class="rf">Design by <a href="https://www.linkedin.com/in/dipen-bhuva-21a296158/" target="_blank">Dipen Bhuva</a></p>
+            <div style="clear:both;"></div>
+        </div>
+    </footer>
+
+    <!-- To-Top Scroll -->
+    <a id="scrolltotop" href="#" class="scrolltop"><i class="fa fa-chevron-up"></i></a>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("scrolltotop");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+    </script>
+
+    <!-- Verti Tab Script -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <!-- Cufon Script -->
+    <script>
+        Cufon.now();
+    </script>
+
+    <!-- Form Script -->
+    <script>
+        $( '.js-input' ).keyup(function() {
+            if( $(this).val() ) {
+                $(this).addClass('not-empty');
+            } else {
+                $(this).removeClass('not-empty');
+            }
+        });
+    </script>
+
+</body>
+
+
+<!-- Mirrored from shail28.github.io/NSF-SaTC/s2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jul 2023 03:28:10 GMT -->
+</html>
